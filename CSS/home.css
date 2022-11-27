@@ -1,3 +1,9 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+/*font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
+/*font-family: 'Expletus Sans', cursive;*/
+
 body {
   background-color: #000000;
 }
