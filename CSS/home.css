@@ -1,13 +1,14 @@
 /*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Inter', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 /*font-family: 'Orbitron', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
 /*font-family: 'Expletus Sans', cursive;*/
 
 /*body*/
-/*body and fonts*/
 body {
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   margin: 0;
   overflow-x: hidden;
 }
@@ -22,7 +23,17 @@ ul {
   list-style: none;
 }
 
-a {
+/*Fonts*/
+p {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, a {
   font-family: 'Expletus Sans', cursive;
 }
 
@@ -172,6 +183,11 @@ a {
   }
 }
 
+/*
+  With the navigation bar done,
+  We can begin with the website itself
+*/
+
 /*Top image*/
 .image {
   width: 100%;
@@ -181,4 +197,265 @@ a {
   width: 100%;
   top: 0;
   margin-top: -5px;
+}
+
+/*h1 on top image*/
+.title {
+  position: absolute;
+  top: 10%;
+  margin-left: 5%;
+  font-size: larger;
+}
+
+/*Media querries for the main title on top image*/
+@media (min-width: 600px) {
+  .title {
+    top: 15%;
+    font-size: 28px;
+  }
+}
+@media (min-width: 930px) {
+  .title {
+    top: 20%;
+    font-size: 32px;
+  }
+}
+
+/*website description*/
+.description {
+  width: 80%;
+  align-content: center;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+}
+
+.desc {
+  margin: 20px auto 20px auto;
+}
+
+.text {
+  margin: 10px auto 40px auto;
+}
+
+/*Media Querries for textbox size*/
+@media (min-width: 600px) {
+  .description {
+    width: 60%;
+  }
+}
+
+/*
+  Section for person types (Age or profession)
+*/
+
+/*Section for kids*/
+.kids_section {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.kids_desc {
+  padding: 10px 0 20px 0;
+  background-color: #C5E5EC;
+}
+
+/*Title and texts in kids section*/
+.for_kids {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.kids_text {
+  width: 80%;
+  margin: auto;
+  color: #000000;
+}
+
+/*Kids section image*/
+.kids_image {
+  width: 100%;
+}
+
+/*Media querries for kids section*/
+@media (min-width: 930px) {
+  .kids_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kids_desc {
+    width: 50%;
+  }
+
+  .kids_image {
+    width: 50%;
+  }
+}
+
+/*
+  Next section
+*/
+
+/*Section for teachers*/
+.teacher_section {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.teacher_desc {
+  padding: 10px 0 20px 0;
+  background-color: #37608F;
+}
+
+/*Title and texts in kids section*/
+.for_teacher {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.teacher_text {
+  width: 80%;
+  margin: auto;
+  color: #ffffff;
+}
+
+/*Teacher section images*/
+.teacher_image1 {
+  width: 100%;
+}
+.teacher_image2 {
+  visibility: hidden;
+  display: none;
+}
+
+/*Media querries for teachers section*/
+@media (min-width: 930px) {
+  .teacher_section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .teacher_desc {
+    width: 50%;
+  }
+
+  .teacher_image1 {
+    width: 25%;
+  }
+  .teacher_image2 {
+    width: 25%;
+    visibility: visible;
+    display: block;
+  }
+}
+
+/*
+  Next section
+*/
+
+/*Section for reserchers*/
+.research_section {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.research_desc {
+  padding: 10px 0 20px 0;
+  background-color: #7B3287;
+}
+
+/*Title and texts in researcher section*/
+.for_research {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.research_text {
+  width: 80%;
+  margin: auto;
+  color: #ffffff;
+}
+
+/*Researcher section image*/
+.research_image {
+  width: 100%;
+}
+
+/*Media querries for researcher section*/
+@media (min-width: 930px) {
+  .research_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .research_desc {
+    width: 50%;
+  }
+
+  .research_image {
+    width: 50%;
+  }
+}
+
+/*
+  Next section
+*/
+
+/*Contact section*/
+.contact_section {
+  background-color: #d9d9d9;
+  padding: 10px 0 50px 0;
+}
+
+.contact_title {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.contact_text {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.contact_info {
+  width: 80%;
+  margin: auto;
+}
+
+.list {
+  margin: 10px 0 10px 0;
+}
+
+.info {
+  font-weight: bold;
+}
+
+.info, .side {
+  display: inline;
+}
+
+@media (min-width: 930px) {
+  .contact_parts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact_text {
+    width: 40%;
+    margin: auto;
+  }
+
+  .contact_info {
+    width: 40%;
+    margin: auto;
+  }
 }
