@@ -31,15 +31,22 @@ ul {
 /*Fonts*/
 p {
   font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.5;
 }
 
-h3 {
-  font-family: 'Inter', sans-serif;
-}
-
-h1, h2, a {
+h1, h2, h3, a {
   font-family: 'Expletus Sans', cursive;
 }
+
+
+/*Text in section buttons*/
+/*
+.button_text {
+  color: #ffffff;
+  text-align: center;
+}*/
 
 /*Menu changes*/
 .navbar {
@@ -72,23 +79,105 @@ h1, h2, a {
 
 .desc {
   margin: 20px auto 30px auto;
+  text-decoration: underline;
   color: #ffffff;
 }
 
 .text {
-  width: 60%;
+  width: 80%;
   margin: 0 auto 10px auto;
-  color: #ffffff;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+  .text {
+    width: 60%;
+  }
+}
 
 /*
   Now for the exhibit sections
 */
-
 /*Cosmology section*/
+.cosmology {
+  background: linear-gradient(#040F21, #1D3449);
+  align-content: center;
+  text-align: center;
+}
 
+/*Title and text*/
+.cosmos_title {
+  padding-top: 30px;
+  margin: 0 auto 30px auto;
+  width: 90%;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*The section itself*/
+.cosmos_section {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.cosmos_desc {
+  background: #000000;
+  margin: 0 auto 20px auto;
+  width: 80%;
+}
+
+.cosmos_text {
+  width: 75%;
+  padding: 20px 0 20px 0;
+  margin: 10px auto 10px auto;
+}
+
+/*Cosmos image under/beside text*/
+.cosmos_image {
+  width: 80%;
+  margin: auto;
+}
+
+/*Media querries for cosmology section*/
+@media (min-width: 930px) {
+  .cosmos_section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .cosmos_desc {
+    width: 50%;
+  }
+
+  .cosmos_text {
+    width: 45%;
+  }
+
+  .cosmos_image {
+    width: 50%;
+  }
+}
+
+/*Cosmos button*/
+/*
+.cosmos_button {
+  width: 200px;
+  height: 40px;
+  margin: 20px auto 30px auto;
+  background: #2389C1;
+  border-radius: 10px;
+  text-decoration: none;
+}*/
+
+/*
+.textbox {
+  width: 90%;
+  margin: auto;
+  background: #000000;
+}
+.cosmos_text {
+  width: 80%;
+  margin: 0 auto 20px auto;
+}*/
 
 /*Contact section*/
 .contact_section {
@@ -106,11 +195,13 @@ h1, h2, a {
   width: 80%;
   margin: auto;
   margin-bottom: 30px;
+  color: #000000;
 }
 
 .contact_info {
   width: 80%;
   margin: auto;
+  color: #000000;
 }
 
 .list {
@@ -119,6 +210,10 @@ h1, h2, a {
 
 .info {
   font-weight: bold;
+}
+
+.side {
+  color: #000000;
 }
 
 .info, .side {
