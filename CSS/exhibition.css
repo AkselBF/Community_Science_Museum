@@ -13,7 +13,7 @@
 
 /*body*/
 body {
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 0;
   overflow-x: hidden;
 }
@@ -97,44 +97,43 @@ h1, h2, h3, a {
 /*
   Now for the exhibit sections
 */
-/*Cosmology section*/
+/*The Cosmology section*/
+
 .cosmology {
   background: linear-gradient(#040F21, #1D3449);
-  align-content: center;
-  text-align: center;
-}
-
-/*Title and text*/
-.cosmos_title {
-  padding-top: 30px;
-  margin: 0 auto 30px auto;
-  width: 90%;
-  text-align: left;
-  color: #ffffff;
+  padding: 10px 0 10px 0;
 }
 
 /*The section itself*/
 .cosmos_section {
   flex-direction: column;
-  margin-bottom: 40px;
+  margin: 10px auto 50px auto;
 }
 
 .cosmos_desc {
-  background: #000000;
-  margin: 0 auto 20px auto;
+  padding: 10px 0 20px 0;
+  background-color: #000000;
+}
+
+/*Title and text*/
+.cosmos_title {
+  font-size: larger;
   width: 80%;
+  text-align: center;
+  margin: 10px auto 30px auto;
+  text-align: left;
+  color: #ffffff;
 }
 
 .cosmos_text {
-  width: 75%;
-  padding: 20px 0 20px 0;
-  margin: 10px auto 10px auto;
+  width: 80%;
+  margin: 10px auto 20px auto;
+  color: #ffffff;
 }
 
 /*Cosmos image under/beside text*/
 .cosmos_image {
-  width: 80%;
-  margin: auto;
+  width: 100%;
 }
 
 /*Media querries for cosmology section*/
@@ -145,15 +144,17 @@ h1, h2, h3, a {
   }
 
   .cosmos_desc {
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
   }
 
-  .cosmos_text {
-    width: 45%;
+  .cosmos_title {
+    width: 90%;
   }
 
   .cosmos_image {
-    width: 50%;
+    width: 45%;
+    margin-left: 5%;
   }
 }
 
