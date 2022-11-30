@@ -1,3 +1,8 @@
+/*
+  Link to the menu css file
+*/
+@import url(menu.css);
+
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Inter', sans-serif;*/
@@ -37,163 +42,12 @@ h1, h2, a {
   font-family: 'Expletus Sans', cursive;
 }
 
-.navbar {
-  background-color: #ffffff;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 0 10px 0 10px;
-  z-index: 100;
-}
-
-.logo {
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  margin-left: 25px;
-  margin: 7px 0 5px 5px;
-  border-radius: 10px;
-}
-
-.navi {
-  height: 50%;
-  width: 300px;
-  position: fixed;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
-  right: 0;
-  top: 65px;
-  z-index: 100;
-}
-
-.navi {
-  max-height: 0;
-  transition: max-height .5s ease-out;
-}
-
-.menu a {
-  display: block;
-  text-decoration: none;
-  padding: 25px 60px 25px 60px;
-  color: #000000;
-}
-
-.menu a:hover {
-  color: #000000;
-  border-radius: 10px;
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu li:hover {
-  transition: 0.5s;
-  border-radius: 10px;
-}
-
-@media (min-width: 1130px) {
-  .menu {
-    list-style: none;
-    float: right;
-  }
-
-  .menu li {
-    float: left;
-  }
-}
-
-.icon {
-  cursor: pointer;
-  float: right;
-  padding: 35px 20px 35px 20px;
-}
-
-.burgerline {
-  background: #000000;
-  display: block;
-  height: 4px;
-  position: relative;
-  width: 35px;
-  border-radius: 10px;
-}
-
-.burgerline::before,
-.burgerline::after {
-  background:#000000;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-}
-
-.burgerline::before {
-  top: 10px;
-  border-radius: 10px;
-}
-
-.burgerline::after {
-  top: -10px;
-  border-radius: 10px;
-}
-
-.burgermenu {
-  display: none;
-}
-
-.burgermenu:checked ~ nav {
-  max-height: 100%;
-}
-
-.burgermenu:checked ~ .icon .burgerline {
-  background: transparent;
-}
-
-.burgermenu:checked ~ .icon .burgerline::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.burgermenu:checked ~ .icon .burgerline::after {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-@media (min-width: 930px) {
-  .navi {
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    z-index: 100;
-  }
-
-  .menu li {
-    float: left;
-  }
-
-  .menu a:hover {
-    background-color: transparent;
-    color: #000000;
-  }
-
-  .icon {
-    display: none;
-  }
-}
-
-/*
-  With the navigation bar done,
-  We can begin with the website itself
-*/
-
 /*Top image*/
 .image {
   width: 100%;
 }
 
-.mainImage {
+.main_image {
   width: 100%;
   top: 0;
   margin-top: -5px;
@@ -202,21 +56,23 @@ h1, h2, a {
 /*h1 on top image*/
 .title {
   position: absolute;
-  top: 10%;
+  overflow: hidden;
+  top: 85px;
   margin-left: 5%;
+  width: 300px;
   font-size: larger;
 }
 
 /*Media querries for the main title on top image*/
 @media (min-width: 600px) {
   .title {
-    top: 15%;
+    top: 100px;
     font-size: 28px;
   }
 }
 @media (min-width: 930px) {
   .title {
-    top: 20%;
+    top: 150px;
     font-size: 32px;
   }
 }
@@ -228,14 +84,15 @@ h1, h2, a {
   text-align: center;
   font-family: 'Inter', sans-serif;
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .desc {
-  margin: 20px auto 20px auto;
+  margin: 20px auto 30px auto;
 }
 
 .text {
-  margin: 10px auto 40px auto;
+  margin: 0 auto 10px auto;
 }
 
 /*Media Querries for textbox size*/
@@ -257,21 +114,21 @@ h1, h2, a {
 
 .kids_desc {
   padding: 10px 0 20px 0;
-  background-color: #C5E5EC;
+  background-color: #0b3a70;
 }
 
 /*Title and texts in kids section*/
 .for_kids {
   font-size: larger;
   text-align: center;
-  margin-bottom: 20px;
-  color: #000000;
+  margin: 10px auto 30px auto;
+  color: #ffffff;
 }
 
 .kids_text {
   width: 80%;
-  margin: auto;
-  color: #000000;
+  margin: 0 auto 20px auto;
+  color: #ffffff;
 }
 
 /*Kids section image*/
@@ -307,30 +164,26 @@ h1, h2, a {
 
 .teacher_desc {
   padding: 10px 0 20px 0;
-  background-color: #37608F;
+  background-color: #7B3287;
 }
 
 /*Title and texts in kids section*/
 .for_teacher {
   font-size: larger;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px auto 30px auto;
   color: #ffffff;
 }
 
 .teacher_text {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 20px auto;
   color: #ffffff;
 }
 
-/*Teacher section images*/
-.teacher_image1 {
+/*Teacher section image*/
+.teacher_image {
   width: 100%;
-}
-.teacher_image2 {
-  visibility: hidden;
-  display: none;
 }
 
 /*Media querries for teachers section*/
@@ -344,13 +197,8 @@ h1, h2, a {
     width: 50%;
   }
 
-  .teacher_image1 {
-    width: 25%;
-  }
-  .teacher_image2 {
-    width: 25%;
-    visibility: visible;
-    display: block;
+  .teacher_image {
+    width: 50%;
   }
 }
 
@@ -366,20 +214,20 @@ h1, h2, a {
 
 .research_desc {
   padding: 10px 0 20px 0;
-  background-color: #7B3287;
+  background-color: #37608F;
 }
 
 /*Title and texts in researcher section*/
 .for_research {
   font-size: larger;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px auto 30px auto;
   color: #ffffff;
 }
 
 .research_text {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 20px auto;
   color: #ffffff;
 }
 

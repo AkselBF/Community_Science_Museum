@@ -1,3 +1,8 @@
+/*
+  Link to the menu css file
+*/
+@import url(menu.css);
+
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Inter', sans-serif;*/
@@ -36,153 +41,103 @@ h1, h2, a {
   font-family: 'Expletus Sans', cursive;
 }
 
+/*Menu changes*/
 .navbar {
-  background-color: #ffffff;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 0 10px 0 10px;
-  z-index: 100;
+  background-color: #000000;
 }
-
-.logo {
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  margin-left: 25px;
-  margin: 7px 0 5px 5px;
-  border-radius: 10px;
-}
-
 .navi {
-  height: 50%;
-  width: 300px;
-  position: fixed;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
-  right: 0;
-  top: 65px;
-  z-index: 100;
+  background-color: rgba(0, 0, 0 , 0.9);
 }
-
-.navi {
-  max-height: 0;
-  transition: max-height .5s ease-out;
-}
-
 .menu a {
-  display: block;
-  text-decoration: none;
-  padding: 25px 60px 25px 60px;
-  color: #000000;
+  color: #ffffff;
 }
-
-.menu a:hover {
-  color: #000000;
-  border-radius: 10px;
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu li:hover {
-  transition: 0.5s;
-  border-radius: 10px;
-}
-
-@media (min-width: 1130px) {
-  .menu {
-    list-style: none;
-    float: right;
-  }
-
-  .menu li {
-    float: left;
-  }
-}
-
-.icon {
-  cursor: pointer;
-  float: right;
-  padding: 35px 20px 35px 20px;
-}
-
-.burgerline {
-  background: #000000;
-  display: block;
-  height: 4px;
-  position: relative;
-  width: 35px;
-  border-radius: 10px;
-}
-
-.burgerline::before,
+.burgerline, .burgerline::before,
 .burgerline::after {
-  background:#000000;
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-}
-
-.burgerline::before {
-  top: 10px;
-  border-radius: 10px;
-}
-
-.burgerline::after {
-  top: -10px;
-  border-radius: 10px;
-}
-
-.burgermenu {
-  display: none;
-}
-
-.burgermenu:checked ~ nav {
-  max-height: 100%;
-}
-
-.burgermenu:checked ~ .icon .burgerline {
-  background: transparent;
-}
-
-.burgermenu:checked ~ .icon .burgerline::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.burgermenu:checked ~ .icon .burgerline::after {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-@media (min-width: 930px) {
-  .navi {
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    z-index: 100;
-  }
-
-  .menu li {
-    float: left;
-  }
-
-  .menu a:hover {
-    background-color: transparent;
-    color: #000000;
-  }
-
-  .icon {
-    display: none;
-  }
+  background: #ffffff;
 }
 
 /*
-  With the navigation bar done,
-  We can begin with the website itself
+  Top section
 */
+
+.top_description {
+  background: linear-gradient(#6772D0, #040F21);
+  padding: 30px 0 80px 0;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+}
+
+.desc {
+  margin: 20px auto 30px auto;
+  color: #ffffff;
+}
+
+.text {
+  width: 60%;
+  margin: 0 auto 10px auto;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {}
+
+/*
+  Now for the exhibit sections
+*/
+
+/*Cosmology section*/
+
+
+/*Contact section*/
+.contact_section {
+  background-color: #d9d9d9;
+  padding: 10px 0 50px 0;
+}
+
+.contact_title {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+.contact_text {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.contact_info {
+  width: 80%;
+  margin: auto;
+}
+
+.list {
+  margin: 10px 0 10px 0;
+}
+
+.info {
+  font-weight: bold;
+}
+
+.info, .side {
+  display: inline;
+}
+
+@media (min-width: 930px) {
+  .contact_parts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact_text {
+    width: 40%;
+    margin: auto;
+  }
+
+  .contact_info {
+    width: 40%;
+    margin: auto;
+  }
+}
