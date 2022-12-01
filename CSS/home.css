@@ -137,6 +137,13 @@ h1, h2, a {
 }
 
 /*Media querries for kids section*/
+@media (max-width: 930px) {
+  .kids_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 930px) {
   .kids_section {
     display: flex;
