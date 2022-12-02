@@ -1,13 +1,20 @@
 /*
-  Link to the menu css file
+  Links to other css files
 */
+
+/*CSS file for menu/navigation bar on top*/
 @import url(menu.css);
+
+/*CSS file for contact section at the bottom*/
+@import url(contact.css);
 
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 /*font-family: 'Inter', sans-serif;*/
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 /*font-family: 'Orbitron', sans-serif;*/
+
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
 /*font-family: 'Expletus Sans', cursive;*/
 
@@ -194,6 +201,13 @@ h1, h2, a {
 }
 
 /*Media querries for teachers section*/
+@media (max-width: 930px) {
+  .teacher_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 930px) {
   .teacher_section {
     display: flex;
@@ -244,6 +258,13 @@ h1, h2, a {
 }
 
 /*Media querries for researcher section*/
+@media (max-width: 930px) {
+  .research_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 930px) {
   .research_section {
     display: flex;
@@ -259,58 +280,3 @@ h1, h2, a {
   }
 }
 
-/*
-  Next section
-*/
-
-/*Contact section*/
-.contact_section {
-  background-color: #d9d9d9;
-  padding: 10px 0 50px 0;
-}
-
-.contact_title {
-  text-align: center;
-  margin-bottom: 30px;
-  text-decoration: underline;
-}
-
-.contact_text {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.contact_info {
-  width: 80%;
-  margin: auto;
-}
-
-.list {
-  margin: 10px 0 10px 0;
-}
-
-.info {
-  font-weight: bold;
-}
-
-.info, .side {
-  display: inline;
-}
-
-@media (min-width: 930px) {
-  .contact_parts {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .contact_text {
-    width: 40%;
-    margin: auto;
-  }
-
-  .contact_info {
-    width: 40%;
-    margin: auto;
-  }
-}
