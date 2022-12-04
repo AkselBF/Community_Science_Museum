@@ -1,0 +1,44 @@
+/*
+  Links to other css files
+*/
+
+/*CSS file for menu/navigation bar on top*/
+@import url(menu.css);
+
+/*CSS file for contact section at the bottom*/
+@import url(contact.css);
+
+/*CSS file for general layout to avoid repetition*/
+@import url(details.css);
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+/*font-family: 'Orbitron', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
+/*font-family: 'Expletus Sans', cursive;*/
+
+/*
+  Section description styling
+*/
+.top_title, .top_text {
+  color: #000000;
+}
+
+#upper_eco {
+  background: linear-gradient(#9cdf7c, #f9ffee);
+  /*background-color: #0185c3;*/
+}
+
+#lower_eco {
+  background: linear-gradient(#eaffad, #e6e5e5);
+  /*background-color: #81d7ff;*/
+}
+
+/*Section titles & texts*/
+.detail_title, .detail_text {
+  color: #000000;
+}

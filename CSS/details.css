@@ -134,7 +134,7 @@ h2, h3, a {
 /*Upper and lower section*/
 .upper_section {
   flex-direction: column;
-  margin-top: -250px;
+  margin-top: -5px;
 }
 
 .lower_section {
@@ -172,8 +172,8 @@ h2, h3, a {
 
 @media (max-width: 930px) {
   .upper_section {
-    display: flex;
     flex-direction: column;
+    display: flex;
   }
 
   .lower_section {
@@ -186,6 +186,7 @@ h2, h3, a {
   .upper_section {
     display: flex;
     flex-direction: row;
+    margin-top: -250px;
   }
 
   .lower_section {
