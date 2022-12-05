@@ -53,16 +53,13 @@ p, h3 {
   line-height: 1.5;
 }
 
-p + li {
-  display: inline-block;
-}
-
 /*
   Top section of page
 */
 .title {
   text-align: center;
   margin: 20px auto 30px auto;
+  text-decoration: underline;
 }
 
 .top {
@@ -128,5 +125,147 @@ p + li {
   .map {
     width: 40%;
     margin-right: 9%;
+  }
+}
+
+/*
+  Mid section
+*/
+
+/*Similarities*/
+.upper_section, .lower_section {
+  padding: 10px 0 30px 0;
+  text-align: center;
+  align-content: center;
+}
+
+.lower_section {
+  margin: -40px auto -30px auto;
+}
+
+.middle_title {
+  margin: 10px auto 20px auto;
+}
+
+.inside_section {
+  text-align: center;
+  align-content: center;
+}
+
+/*
+  inside-text and image are for the 
+  cafe and shop sections
+*/
+.inside_image {
+  width: 80%;
+  margin: 10px auto 20px auto;
+}
+
+.inside_image:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.inside_text {
+  width: 80%;
+  margin: 10px auto 10px auto;
+}
+
+/*Opening times*/
+.open {
+  background-color: #e7e7e7;
+  margin-top: 40px;
+  padding: 10px 0 30px 0;
+}
+
+.open_times {
+  width: 80%;
+  margin: auto;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto 10px auto;
+}
+
+li + p {
+  margin: 0 10px 0 10px;
+}
+
+/*
+  Cafe/Food and drinks
+*/
+.cafe {
+  background-color: #B8CBDD;
+  padding: 10px 0 30px 0;
+}
+
+/*
+  Shop
+*/
+.shop {
+  background-color: #EBA8A8;
+  padding: 10px 0 30px 0;
+}
+
+/*
+  accessibility
+*/
+.access {
+  background-color: #C0FBCD;
+  padding: 10px 0 30px 0;
+}
+
+.access_text {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/*Media querries for accessibility*/
+@media (max-width: 930px) {
+  .upper_section, .lower_section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 930px) {
+  .upper_section, .lower_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .open {
+    width: 30%;
+  }
+
+  .cafe {
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .shop {
+    width: 70%;
+  }
+
+  .access {
+    width: 30%;
+  }
+
+  .inside_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inside_image {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .inside_text {
+    width: 40%;
+    margin-right: 5%;
   }
 }
