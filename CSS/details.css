@@ -114,6 +114,7 @@ h2, h3, a {
     width: 280px;
   }
 }
+
 @media (min-width: 930px) {
   .top_title {
     top: 150px;

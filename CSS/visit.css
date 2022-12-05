@@ -23,7 +23,7 @@
 
 /*body*/
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 0;
   overflow-x: hidden;
 }
@@ -38,14 +38,95 @@ ul {
   list-style: none;
 }
 
+li {
+  font-family: 'Expletus Sans', cursive;
+}
+
 /*Fonts*/
-p {
+h1, h2 {
+  font-family: 'Expletus Sans', cursive;
+}
+
+p, h3 {
   font-family: 'Inter', sans-serif;
-  color: #ffffff;
   text-align: left;
   line-height: 1.5;
 }
 
-h1, h2, h3, a {
-  font-family: 'Expletus Sans', cursive;
+p + li {
+  display: inline-block;
+}
+
+/*
+  Top section of page
+*/
+.title {
+  text-align: center;
+  margin: 20px auto 30px auto;
+}
+
+.top {
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+/*Page title and description*/
+.top_title, .top_text {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.top_text {
+  margin-bottom: 10px;
+}
+
+.top_title {
+  margin-bottom: 20px;
+}
+
+.top_desc {
+  margin-bottom: 30px;
+}
+
+/*map image*/
+.map {
+  width: 80%;
+  margin: auto;
+}
+
+.map:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+/*Media querries for top section*/
+@media (max-width: 930px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 930px) {
+  .title {
+    margin-bottom: 60px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+
+  .top_desc {
+    width: 40%;
+    margin-left: 9%;
+  }
+
+  .map {
+    width: 40%;
+    margin-right: 9%;
+  }
 }
