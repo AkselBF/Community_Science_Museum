@@ -18,17 +18,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #7e7e7ebc;
 }
-/*
-.screenshots::-webkit-scrollbar {
-  height: 10px;
-}
-.screenshots::-webkit-scrollbar-track {
-  background: #000000;
-}
-.screenshots::-webkit-scrollbar-thumb {
-  background: #444444;
-  border-radius: 10px;
-}
-.screenshots::-webkit-scrollbar-thumb:hover {
-  background: #f8c86f;
-}*/
