@@ -102,14 +102,14 @@ h1, h2, h3, a {
 }
 
 /*Media querries for top section*/
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .top_desc {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .top_desc {
     display: flex;
     flex-direction: row-reverse;
@@ -188,7 +188,7 @@ h1, h2, h3, a {
 }
 
 /*Media querries for mid section as a whole*/
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .mid_section {
     background: linear-gradient(270deg, #000000, #000000 20%, #e7e7e7 20%);
   }
@@ -211,7 +211,7 @@ h1, h2, h3, a {
   }
 }
 
-@media (min-width: 1185px) {
+@media (min-width: 1255px) {
   .mid_text {
     width: 80%;
   }
@@ -228,14 +228,14 @@ h1, h2, h3, a {
 }
 
 /*Media querries for each individual section*/
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .section {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .section {
     display: flex;
     flex-direction: row;
@@ -257,7 +257,7 @@ h1, h2, h3, a {
 }
 
 /*Media querries for bottom part*/
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .bottom_text {
     width: 50%;
   }

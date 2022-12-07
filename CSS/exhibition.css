@@ -90,7 +90,7 @@ h1, h2, h3, a {
 }
 
 /*Media querries for top description*/
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .text {
     width: 60%;
   }
@@ -115,13 +115,13 @@ h1, h2, h3, a {
 
 .exhibit_desc {
   padding: 10px 0 20px 0;
-  background-color: #000000;
+  background-color: #000000ba;
 }
 
 /*Title and text*/
 .exhibit_title {
   font-family: 'Orbitron', sans-serif;
-  font-size: larger;
+  font-size: 40px;
   width: 80%;
   text-align: center;
   margin: 10px auto 30px auto;
@@ -142,14 +142,14 @@ h1, h2, h3, a {
 }
 
 /*Media querries for cosmology section*/
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .exhibit_section {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .exhibit_section {
     display: flex;
     flex-direction: row-reverse;
@@ -158,10 +158,12 @@ h1, h2, h3, a {
   .exhibit_desc {
     width: 45%;
     margin-right: 5%;
+    background-color: #000000;
   }
 
   .exhibit_title {
     width: 90%;
+    font-size: 24px;
   }
 
   .exhibit_image {
@@ -173,26 +175,27 @@ h1, h2, h3, a {
 /*Cosmos button and hover effects*/
 .exhibit_button {
   display: inline-block;
-  width: 250px;
-  height: 50px;
-  margin: 10px auto 50px auto;
-  border-radius: 10px;
+  width: 500px;
+  height: 100px;
+  margin: 50px auto 80px auto;
+  border-radius: 20px;
   text-decoration: none;
 }
 
 /*Different text types inside the buttons*/
-.white_button_text {
-  margin: 12px auto 0 auto;
-  color: #ffffff;
+.white_button_text, .black_button_text {
+  margin: 24px auto 0 auto;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+}
+
+.white_button_text {
+  color: #ffffff;
 }
 
 .black_button_text {
-  margin: 12px auto 0 auto;
   color: #000000;
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
 }
 
 /*Keyframes and hover effect for text in button*/
@@ -215,13 +218,22 @@ h1, h2, h3, a {
 }
 
 /*Media querries for buttons*/
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .exhibit {
     align-content: flex-start;
     text-align: right;
   }
+
   .exhibit_button {
     margin: -30px 5% 50px 0;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .white_button_text, .black_button_text {
+    margin: 10px auto 0 auto;
+    font-size: 24px;
   }
 }
 

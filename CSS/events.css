@@ -69,7 +69,7 @@ h1, h2, h3, a {
   margin: 0 auto 10px auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .text {
     width: 60%;
   }
@@ -125,14 +125,14 @@ h1, h2, h3, a {
 }
 
 /*Media querries for newsboxes*/
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .upper_news, .lower_news {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .upper_news, .lower_news {
     display: flex;
     flex-direction: row;

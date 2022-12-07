@@ -21,8 +21,8 @@
 }
 
 .navi {
-  height: 52%;
-  width: 300px;
+  height: 30%;
+  width: 50%;
   position: fixed;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
@@ -54,7 +54,23 @@
   border-radius: 10px;
 }
 
-@media (min-width: 1130px) {
+/*Media querries for menu (For mobile)*/
+@media (max-width: 999px) {
+  .navbar {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .menu a {
+    font-size: 30px;
+    margin: 15px 10px 15px 0;
+  }
+
+  .menu a:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 1100px) {
   .menu {
     list-style: none;
     float: right;
@@ -123,7 +139,8 @@
   top: 0;
 }
 
-@media (min-width: 1030px) {
+/*Media querries for menu change with width*/
+@media (min-width: 1000px) {
   .navi {
     max-height: none;
     top: 0;
