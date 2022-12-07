@@ -43,6 +43,7 @@
 @media (max-width: 999px) {
   .contact_title {
     font-size: 40px;
+    margin: 20px auto 40px auto;
   }
 
   .contact_text {
