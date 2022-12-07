@@ -57,7 +57,16 @@
 /*Media querries for menu (For mobile)*/
 @media (max-width: 999px) {
   .navbar {
-    padding: 20px 10px 20px 10px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .navi {
+    top: 95px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
   }
 
   .menu a {
@@ -115,6 +124,23 @@
 .burgerline::after {
   top: -10px;
   border-radius: 10px;
+}
+
+/*Media querries for the menu burgerlines*/
+@media (max-width: 999px) {
+  .burgerline {
+    height: 9px;
+    width: 80px;
+    top: 10px;
+  }
+
+  .burgerline::before {
+    top: 20px;
+  }
+
+  .burgerline::after {
+    top: -20px;
+  }
 }
 
 .burgermenu {
