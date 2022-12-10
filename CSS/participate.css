@@ -83,8 +83,9 @@ h1, h2, h3, a {
 .title {
   width: 80%;
   padding-top: 20px;
-  margin: 20px auto 30px auto;
+  margin: 20px auto 50px auto;
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .top_image {
@@ -107,6 +108,14 @@ h1, h2, h3, a {
     display: flex;
     flex-direction: column;
   }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -119,6 +128,11 @@ h1, h2, h3, a {
     width: 90%;
     text-align: left;
     padding: 20px 0 20px 0;
+    font-size: 36px;
+  }
+
+  .text {
+    font-size: 16px;
   }
 
   .top_text {
@@ -188,6 +202,12 @@ h1, h2, h3, a {
 }
 
 /*Media querries for mid section as a whole*/
+@media (max-width: 1000px) {
+  .mid_title {
+    font-size: 46px;
+  }
+}
+
 @media (min-width: 1000px) {
   .mid_section {
     background: linear-gradient(270deg, #000000, #000000 20%, #e7e7e7 20%);
@@ -196,6 +216,7 @@ h1, h2, h3, a {
   .mid_title {
     width: 85%;
     text-align: left;
+    font-size: 24px;
   }
 
   .mid_text {
@@ -257,8 +278,22 @@ h1, h2, h3, a {
 }
 
 /*Media querries for bottom part*/
+@media (max-width: 1000px) {
+  .bottom_title {
+    font-size: 24px;
+  }
+
+  .bottom_text {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1000px) {
+  .bottom_title {
+    font-size: 24px;
+  }
+
   .bottom_text {
     width: 50%;
+    font-size: 16px;
   }
 }

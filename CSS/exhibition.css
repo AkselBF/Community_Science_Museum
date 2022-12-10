@@ -70,7 +70,6 @@ h1, h2, h3, a {
 */
 .top_description {
   background: linear-gradient(#6772D0, #040F21);
-  padding: 30px 0 80px 0;
   width: 100%;
   align-content: center;
   text-align: center;
@@ -85,14 +84,37 @@ h1, h2, h3, a {
 }
 
 .text {
-  width: 80%;
   margin: 0 auto 10px auto;
 }
 
 /*Media querries for top description*/
 @media (min-width: 700px) {
+  .top_description {
+    padding: 30px 0 100px 0;
+  }
+
+  .desc {
+    font-size: 46px;
+  }
+
   .text {
-    width: 60%;
+    width: 66%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .top_description {
+    padding: 30px 0 80px 0;
+  }
+
+  .desc {
+    font-size: 36px;
+  }
+
+  .text {
+    width: 72%;
+    font-size: 16px;
   }
 }
 
@@ -141,11 +163,19 @@ h1, h2, h3, a {
   width: 100%;
 }
 
-/*Media querries for cosmology section*/
+/*Media querries for each section*/
 @media (max-width: 1000px) {
   .exhibit_section {
     display: flex;
     flex-direction: column;
+  }
+
+  .exhibit_desc {
+    padding: 20px 0 50px 0;
+  }
+
+  .exhibit_text {
+    font-size: 18px;
   }
 }
 
@@ -164,6 +194,10 @@ h1, h2, h3, a {
   .exhibit_title {
     width: 90%;
     font-size: 24px;
+  }
+
+  .exhibit_text {
+    font-size: 16px;
   }
 
   .exhibit_image {

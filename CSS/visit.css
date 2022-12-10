@@ -58,7 +58,7 @@ p, h3 {
 */
 .title {
   text-align: center;
-  margin: 20px auto 30px auto;
+  margin: 20px auto 50px auto;
   text-decoration: underline;
 }
 
@@ -90,7 +90,7 @@ p, h3 {
 /*map image*/
 .map {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 0 auto;
 }
 
 .map:hover {
@@ -103,18 +103,37 @@ p, h3 {
   .top {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .title {
+    font-size: 46px;
+  }
+
+  .top_title {
+    font-size: 46px;
+  }
+
+  .top_text {
+    font-size: 20px;
+  }
+
+  .map {
+    width: 80%;
+    margin: 0 auto 20px auto;
   }
 }
 
 @media (min-width: 1000px) {
   .title {
     margin-bottom: 60px;
+    font-size: 36px;
   }
 
   .top {
     display: flex;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .top_desc {
@@ -229,6 +248,18 @@ li + p {
     display: flex;
     flex-direction: column;
   }
+
+  .open, .cafe, .shop, .access {
+    padding-bottom: 50px;
+  }
+
+  .time li {
+    font-size: 36px;
+  }
+
+  .time p {
+    font-size: 34px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -252,6 +283,10 @@ li + p {
 
   .access {
     width: 30%;
+  }
+
+  .open, .cafe, .shop, .access {
+    padding-bottom: 10px;
   }
 
   .inside_section {

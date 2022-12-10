@@ -21,7 +21,7 @@
 }
 
 .navi {
-  height: 30%;
+  height: 40%;
   width: 50%;
   position: fixed;
   overflow: hidden;
@@ -61,6 +61,7 @@
   }
 
   .navi {
+    height: 565px;
     top: 95px;
   }
 
