@@ -59,9 +59,10 @@
   }
 
   .side {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
+
 @media (min-width: 1000px) {
   .contact_parts {
     display: flex;

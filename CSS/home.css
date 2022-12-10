@@ -114,11 +114,11 @@ h1, h2, a {
   }
 
   .desc {
-    font-size: 44px;
+    font-size: 46px;
   }
 
   .text {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
 
@@ -186,6 +186,14 @@ h1, h2, a {
   .section {
     display: flex;
     flex-direction: column;
+  }
+
+  .section_title {
+    font-size: 20px;
+  }
+
+  .section_text {
+    font-size: 18px;
   }
 }
 

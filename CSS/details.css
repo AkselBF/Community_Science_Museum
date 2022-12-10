@@ -195,6 +195,18 @@ h2, h3, a {
     display: flex;
     flex-direction: column;
   }
+
+  .detail_desc {
+    padding: 60px 0 20px 0;
+  }
+
+  .detail_title {
+    font-size: 20px;
+  }
+
+  .detail_text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1000px) {
