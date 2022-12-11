@@ -29,7 +29,6 @@ body {
   background-color: #ffffff;
   margin: 0;
   overflow-x: hidden;
-  /*overflow: overlay;*/ /*For transparent scrollbar*/
 }
 
 *{
@@ -171,8 +170,7 @@ h1, h2, h3, a {
 */
 .mid_desc {
   margin-top: 10px;
-  margin-bottom: 10px;
-  height: 250px;
+  height: 350px;
   overflow-y: auto;
   text-align: justify;
 }
@@ -193,18 +191,18 @@ h1, h2, h3, a {
   border-radius: 10px;
 }
 
-.mid_text {
-  margin: 0 auto 10px auto;
-}
-
-.mid_image {
-  margin: 20px auto 40px auto;
+.mid_text, .mid_image {
+  margin: auto;
 }
 
 /*Media querries for mid section as a whole*/
 @media (max-width: 1000px) {
   .mid_title {
     font-size: 46px;
+  }
+
+  .mid_image {
+    margin: 40px auto 60px auto;
   }
 }
 
