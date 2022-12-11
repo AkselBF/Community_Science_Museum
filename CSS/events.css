@@ -126,6 +126,10 @@ h1, h2, h3, a {
   object-position: 50% 20%;
 }
 
+#image_4 {
+  object-position: 0 60%;
+}
+
 .title {
   color: #ffffff;
   background-color: #000000;
