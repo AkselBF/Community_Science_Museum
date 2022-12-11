@@ -30,12 +30,10 @@
 
 #upper_bio {
   background: linear-gradient(#064e85, #0185c3);
-  /*background-color: #0185c3;*/
 }
 
 #lower_bio {
   background: linear-gradient(#14a9ee, #81d7ff);
-  /*background-color: #81d7ff;*/
 }
 
 /*Section titles & texts*/
@@ -44,6 +42,12 @@
 }
 
 /*Media querries for a few differences*/
+@media (max-width: 1000px) {
+  .top_text {
+    top: 350px;
+  }
+}
+
 @media (min-width: 1000px) {
   .top_title {
     width: 400px;
