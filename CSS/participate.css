@@ -113,7 +113,7 @@ h1, h2, h3, a {
   }
 
   .text {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -170,7 +170,7 @@ h1, h2, h3, a {
 */
 .mid_desc {
   margin-top: 10px;
-  height: 350px;
+  height: 400px;
   overflow-y: auto;
   text-align: justify;
 }
@@ -195,10 +195,45 @@ h1, h2, h3, a {
   margin: auto;
 }
 
+/*text checkbox*/
+.text_phone label {
+  display: none;
+}
+
 /*Media querries for mid section as a whole*/
 @media (max-width: 1000px) {
   .mid_title {
     font-size: 46px;
+  }
+
+  /*text checkbox*/
+  .text_phone label {
+    display: block;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px 30px 20px 20px;
+    margin: 30px auto 0 auto;
+    font-size: 26px;
+  }
+
+  .mid_desc {
+    display: none;
+    background: #d0d0d0;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 10px 30px 10px 30px;
+  }
+
+  #text_show_1:checked + .mid_desc, #text_show_2:checked + .mid_desc, 
+  #text_show_3:checked + .mid_desc {
+    display: block;
+  }
+
+  #text_show_1, #text_show_2, #text_show_3 {
+    display: none;
   }
 
   .mid_image {
