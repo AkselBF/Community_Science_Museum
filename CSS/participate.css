@@ -24,19 +24,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap');
 /*font-family: 'Expletus Sans', cursive;*/
 
-/*body*/
-body {
-  background-color: #ffffff;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/*List style*/
 ul {
   list-style: none;
 }

@@ -1,5 +1,18 @@
+/*Body (For every page)*/
+body {
+  background-color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*
-  Top navigation bar (white version)
+  Top navigation bar (white)
 */
 
 .navbar {
