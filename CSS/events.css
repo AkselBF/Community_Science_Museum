@@ -110,11 +110,11 @@ h1, h2, h3, a {
   background-color: #000000;
 }
 
-#image_2 {
+.image_2 {
   object-position: 50% 20%;
 }
 
-#image_4 {
+.image_4 {
   object-position: 0 60%;
 }
 

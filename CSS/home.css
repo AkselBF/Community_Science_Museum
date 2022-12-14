@@ -79,7 +79,7 @@ h1, h2, a {
 }
 
 /*website description*/
-.description {
+.top_description {
   align-content: center;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -87,39 +87,39 @@ h1, h2, a {
   padding-bottom: 40px;
 }
 
-.desc {
+.top_description_title {
   margin: 20px auto 30px auto;
 }
 
-.text {
+.top_description_text {
   margin: 0 auto 10px auto;
 }
 
 /*Media Querries for textbox size*/
 @media (min-width: 700px) {
-  .description {
+  .top_description {
     width: 60%;
   }
 
-  .desc {
+  .top_description_title {
     font-size: 46px;
   }
 
-  .text {
+  .top_description_text {
     font-size: 36px;
   }
 }
 
 @media (min-width: 1000px) {
-  .description {
+  .top_description {
     width: 80%;
   }
 
-  .desc {
+  .top_description_title {
     font-size: 28px;
   }
 
-  .text {
+  .top_description_text {
     font-size: 16px;
   }
 }
@@ -129,40 +129,40 @@ h1, h2, a {
 */
 
 /*Section and their description*/
-.section {
+.section_category {
   flex-direction: column;
   margin-bottom: 50px;
 }
 
-.section_desc {
+.category_description {
   padding: 10px 0 20px 0;
   background-color: #0b3a70;
 }
 
-#teacher_desc {
+#teacher_description {
   background-color: #7B3287;
 }
 
-#research_desc {
+#research_description {
   background-color: #37608F;
 }
 
 /*Title and texts in each section*/
-.section_title {
+.category_title {
   font-size: larger;
   text-align: center;
   margin: 10px auto 30px auto;
   color: #ffffff;
 }
 
-.section_text {
+.category_text {
   width: 80%;
   margin: 0 auto 20px auto;
   color: #ffffff;
 }
 
 /*Section image*/
-.section_image {
+.category_image {
   width: 100%;
 }
 
@@ -171,36 +171,36 @@ h1, h2, a {
 */
 
 @media (max-width: 1000px) {
-  .section {
+  .section_category {
     display: flex;
     flex-direction: column;
   }
 
-  .section_title {
+  .category_title {
     font-size: 20px;
   }
 
-  .section_text {
+  .category_text {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1000px) {
-  .section {
+  .section_category {
     display: flex;
     flex-direction: row;
   }
 
-  #teacher_section {
+  #teacher_category {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .section_desc {
+  .category_description {
     width: 50%;
   }
 
-  .section_image {
+  .category_image {
     width: 50%;
   }
 }
