@@ -308,7 +308,7 @@ h1, h2, h3, a {
 /*Media querries for bottom part*/
 @media (max-width: 1000px) {
   .bottom_title {
-    font-size: 24px;
+    font-size: 46px;
   }
 
   .bottom_text {
