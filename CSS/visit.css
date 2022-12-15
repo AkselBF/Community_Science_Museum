@@ -194,6 +194,12 @@ p, h3 {
   display: flex;
   flex-direction: row;
   margin: 10px auto 10px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.opening_time_day li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 li + p {
