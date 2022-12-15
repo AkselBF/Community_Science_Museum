@@ -50,63 +50,63 @@ p, h3 {
   text-decoration: underline;
 }
 
-.top {
+.top_part {
   flex-direction: column;
   text-align: center;
   align-content: center;
 }
 
+.top_part_description {
+  margin-bottom: 30px;
+}
+
 /*Page title and description*/
-.top_title, .top_text {
+.top_description_title, .top_description_text {
   width: 80%;
   margin: auto;
   text-align: left;
 }
 
-.top_text {
+.top_description_text {
   margin-bottom: 10px;
 }
 
-.top_title {
+.top_description_title {
   margin-bottom: 20px;
 }
 
-.top_desc {
-  margin-bottom: 30px;
-}
-
 /*map image*/
-.map {
+.top_part_map {
   width: 80%;
   margin: 0 auto 0 auto;
 }
 
-.map:hover {
+.top_part_map:hover {
   transform: scale(110%);
   transition: 0.5s;
 }
 
 /*Media querries for top section*/
 @media (max-width: 1000px) {
-  .top {
+  .title {
+    font-size: 46px;
+  }
+
+  .top_part {
     display: flex;
     flex-direction: column;
     margin-bottom: 80px;
   }
 
-  .title {
+  .top_description_title {
     font-size: 46px;
   }
 
-  .top_title {
-    font-size: 46px;
-  }
-
-  .top_text {
+  .top_description_text {
     font-size: 20px;
   }
 
-  .map {
+  .top_part_map {
     width: 80%;
     margin: 0 auto 20px auto;
   }
@@ -118,18 +118,18 @@ p, h3 {
     font-size: 36px;
   }
 
-  .top {
+  .top_part {
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
   }
 
-  .top_desc {
+  .top_part_description {
     width: 40%;
     margin-left: 9%;
   }
 
-  .map {
+  .top_part_map {
     width: 40%;
     margin-right: 9%;
   }
@@ -140,57 +140,57 @@ p, h3 {
 */
 
 /*Similarities*/
-.upper_section, .lower_section {
+.section_upper, .section_lower {
   padding: 10px 0 30px 0;
   text-align: center;
   align-content: center;
 }
 
-.lower_section {
+.section_lower {
   margin: -40px auto -30px auto;
 }
 
-.middle_title {
-  margin: 10px auto 20px auto;
+.article_title {
+  margin: 10px auto 30px auto;
 }
 
-.inside_section {
+.article_description {
   text-align: center;
   align-content: center;
 }
 
 /*
-  inside-text and image are for the 
+  The text and image for the 
   cafe and shop sections
 */
-.inside_image {
+.article_description_image {
   width: 80%;
   margin: 10px auto 20px auto;
 }
 
-.inside_image:hover {
+.article_description_image:hover {
   transform: scale(110%);
   transition: 0.5s;
 }
 
-.inside_text {
+.article_description_text {
   width: 80%;
   margin: 10px auto 10px auto;
 }
 
 /*Opening times*/
-.open {
+.opening {
   background-color: #e7e7e7;
   margin-top: 40px;
   padding: 10px 0 30px 0;
 }
 
-.open_times {
+.opening_time {
   width: 80%;
   margin: auto;
 }
 
-.time {
+.opening_time_day {
   display: flex;
   flex-direction: row;
   margin: 10px auto 10px auto;
@@ -219,12 +219,12 @@ li + p {
 /*
   accessibility
 */
-.access {
+.accessibility {
   background-color: #C0FBCD;
   padding: 10px 0 30px 0;
 }
 
-.access_text {
+.accessibility_text {
   width: 80%;
   margin: auto;
   padding-bottom: 30px;
@@ -232,31 +232,31 @@ li + p {
 
 /*Media querries for accessibility*/
 @media (max-width: 1000px) {
-  .upper_section, .lower_section {
+  .section_upper, .section_lower {
     display: flex;
     flex-direction: column;
   }
 
-  .open, .cafe, .shop, .access {
+  .opening, .cafe, .shop, .accessibility {
     padding-bottom: 50px;
   }
 
-  .time li {
+  .opening_time_day li {
     font-size: 36px;
   }
 
-  .time p {
+  .opening_time_day p {
     font-size: 34px;
   }
 }
 
 @media (min-width: 1000px) {
-  .upper_section, .lower_section {
+  .section_upper, .section_lower {
     display: flex;
     flex-direction: row;
   }
 
-  .open {
+  .opening {
     width: 30%;
   }
 
@@ -269,25 +269,25 @@ li + p {
     width: 70%;
   }
 
-  .access {
+  .accessibility {
     width: 30%;
   }
 
-  .open, .cafe, .shop, .access {
+  .opening, .cafe, .shop, .accessibility {
     padding-bottom: 10px;
   }
 
-  .inside_section {
+  .article_description {
     display: flex;
     flex-direction: row;
   }
 
-  .inside_image {
+  .article_description_image {
     width: 40%;
     margin-left: 5%;
   }
 
-  .inside_text {
+  .article_description_text {
     width: 40%;
     margin-right: 5%;
   }

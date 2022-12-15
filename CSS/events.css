@@ -48,31 +48,31 @@ h1, h2, h3, a {
   margin: 30px 0 50px 0;
 }
 
-.desc {
+.top_description_title {
   margin-bottom: 20px;
 }
 
-.text {
+.top_description_text {
   margin: 0 auto 10px auto;
 }
 
 @media (min-width: 700px) {
-  .desc {
+  .top_description_title {
     font-size: 46px;
   }
 
-  .text {
+  .top_description_text {
     font-size: 30px;
     width: 60%;
   }
 }
 
 @media (min-width: 1000px) {
-  .desc {
+  .top_description_title {
     font-size: 36px;
   }
 
-  .text {
+  .top_description_text {
     font-size: 16px;
     width: 72%;
   }

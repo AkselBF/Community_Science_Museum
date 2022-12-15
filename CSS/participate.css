@@ -45,7 +45,7 @@ h1, h2, h3, a {
   background-color: #000000;
 }
 .navi {
-  background-color: rgba(0, 0, 0 , 0.9);
+  background-color: rgba(0, 0, 0 , 0.95);
 }
 .menu a {
   color: #ffffff;
@@ -59,7 +59,7 @@ h1, h2, h3, a {
   Top section
 */
 
-.top_section {
+.participate_top_part {
   background: linear-gradient(#000000, #000000 40%, #ffffff 40%);
   text-align: center;
   align-content: center;
@@ -67,7 +67,7 @@ h1, h2, h3, a {
   margin-top: -20px;
 }
 
-.title {
+.participate_top_title {
   width: 80%;
   padding-top: 20px;
   margin: 20px auto 50px auto;
@@ -75,61 +75,61 @@ h1, h2, h3, a {
   text-decoration: underline;
 }
 
-.top_image {
+.participate_top_text {
+  width: 80%;
+  margin: auto;
+}
+
+.participate_top_image {
   width: 60%;
   margin: 0 auto 20px auto;
 }
 
 .top_text {
-  width: 80%;
-  margin: auto;
-}
-
-.text {
   margin-top: 10px;
 }
 
 /*Media querries for top section*/
 @media (max-width: 1000px) {
-  .top_desc {
+  .participate_top_description {
     display: flex;
     flex-direction: column;
   }
 
-  .title {
+  .participate_top_title {
     font-size: 56px;
   }
 
-  .text {
+  .top_text {
     font-size: 24px;
   }
 }
 
 @media (min-width: 1000px) {
-  .top_desc {
+  .participate_top_description {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .title {
+  .participate_top_title {
     width: 90%;
     text-align: left;
     padding: 20px 0 20px 0;
     font-size: 36px;
   }
 
-  .text {
-    font-size: 16px;
-  }
-
-  .top_text {
+  .participate_top_text {
     width: 35%;
     margin-left: 7.5%;
   }
 
-  .top_image {
+  .participate_top_image {
     width: 40%;
     margin-right: 10%;
+  }
+
+  .top_text {
+    font-size: 16px;
   }
 }
 
@@ -137,16 +137,16 @@ h1, h2, h3, a {
   mid section
 */
 
-.mid_section {
+.participate_sections {
   background-color: #e7e7e7;
   padding-bottom: 10px;
 }
 
-.mid_title, .mid_text, .mid_image {
+.participate_section_title, .mid_text, .mid_image {
   width: 80%;
 }
 
-.mid_title {
+.participate_section_title {
   margin: 10px auto 30px auto;
   padding-top: 20px;
   text-decoration: underline;
@@ -190,7 +190,7 @@ h1, h2, h3, a {
 
 /*Media querries for mid section as a whole*/
 @media (max-width: 1000px) {
-  .mid_title {
+  .participate_section_title {
     font-size: 46px;
   }
 
@@ -230,11 +230,11 @@ h1, h2, h3, a {
 }
 
 @media (min-width: 1000px) {
-  .mid_section {
+  .participate_sections {
     background: linear-gradient(270deg, #000000, #000000 20%, #e7e7e7 20%);
   }
 
-  .mid_title {
+  .participate_section_title {
     width: 85%;
     text-align: left;
     font-size: 24px;
