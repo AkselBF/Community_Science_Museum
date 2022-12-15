@@ -227,6 +227,10 @@ h1, h2, h3, a {
     display: block;
   }
 
+  .participate_type_text {
+    font-size: 24px;
+  }
+
   .participate_type_image {
     margin: 40px auto 60px auto;
   }
@@ -308,7 +312,7 @@ h1, h2, h3, a {
   }
 
   .bottom_text {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
