@@ -189,6 +189,11 @@ h1, h2, h3, a {
   display: none;
 }
 
+/*Works best with ID*/
+#participate_button_text_1, #participate_button_text_2, #participate_button_text_3 {
+  display: none;
+}
+
 /*Media querries for mid section as a whole*/
 @media (max-width: 1000px) {
   .participate_section_title {
@@ -205,7 +210,7 @@ h1, h2, h3, a {
     background-color: #000000;
     padding: 20px 30px 20px 20px;
     margin: 30px auto 0 auto;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .participate_type_description {
@@ -220,10 +225,6 @@ h1, h2, h3, a {
   #participate_button_text_2:checked + .participate_type_description, 
   #participate_button_text_3:checked + .participate_type_description {
     display: block;
-  }
-
-  #participate_button_text_1, #participate_button_text_2, #participate_button_text_3 {
-    display: none;
   }
 
   .participate_type_image {
