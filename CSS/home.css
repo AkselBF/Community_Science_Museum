@@ -139,11 +139,11 @@ h1, h2, a {
   background-color: #0b3a70;
 }
 
-#teacher_description {
+.teacher_description {
   background-color: #7B3287;
 }
 
-#research_description {
+.research_description {
   background-color: #37608F;
 }
 
@@ -191,7 +191,7 @@ h1, h2, a {
     flex-direction: row;
   }
 
-  #teacher_category {
+  .teacher_category {
     display: flex;
     flex-direction: row-reverse;
   }
