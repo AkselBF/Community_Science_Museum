@@ -236,7 +236,7 @@ li + p {
   padding-bottom: 30px;
 }
 
-/*Media querries for accessibility*/
+/*Media querries for all sections*/
 @media (max-width: 1000px) {
   .section_upper, .section_lower {
     display: flex;
@@ -245,6 +245,10 @@ li + p {
 
   .opening, .cafe, .shop, .accessibility {
     padding-bottom: 50px;
+  }
+
+  .article_title {
+    font-size: 32px;
   }
 
   .opening_time_day li {
