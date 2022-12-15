@@ -142,7 +142,8 @@ h1, h2, h3, a {
   padding-bottom: 10px;
 }
 
-.participate_section_title, .mid_text, .mid_image {
+.participate_section_title, .participate_type_text, 
+.participate_type_image {
   width: 80%;
 }
 
@@ -156,7 +157,7 @@ h1, h2, h3, a {
   Making a scrollbar for the text 
   should it be too long
 */
-.mid_desc {
+.participate_type_description {
   margin-top: 10px;
   height: 400px;
   overflow-y: auto;
@@ -166,25 +167,25 @@ h1, h2, h3, a {
 /*
   Styling the text scrollbar
 */
-.mid_desc::-webkit-scrollbar {
+.participate_type_description::-webkit-scrollbar {
   height: 10px;
 }
 
-.mid_desc::-webkit-scrollbar-track {
+.participate_type_description::-webkit-scrollbar-track {
   background: #e7e7e700;
 }
 
-.mid_desc::-webkit-scrollbar-thumb {
+.participate_type_description::-webkit-scrollbar-thumb {
   background: #a2a2a2;
   border-radius: 10px;
 }
 
-.mid_text, .mid_image {
+.participate_type_text, .participate_type_image {
   margin: auto;
 }
 
 /*text checkbox*/
-.text_phone label {
+.participate_phone_text label {
   display: none;
 }
 
@@ -195,7 +196,7 @@ h1, h2, h3, a {
   }
 
   /*text checkbox*/
-  .text_phone label {
+  .participate_phone_text label {
     display: block;
     cursor: pointer;
     width: 50%;
@@ -204,10 +205,10 @@ h1, h2, h3, a {
     background-color: #000000;
     padding: 20px 30px 20px 20px;
     margin: 30px auto 0 auto;
-    font-size: 26px;
+    font-size: 28px;
   }
 
-  .mid_desc {
+  .participate_type_description {
     display: none;
     background: #ffffff;
     width: 80%;
@@ -215,16 +216,17 @@ h1, h2, h3, a {
     padding: 10px 30px 10px 30px;
   }
 
-  #text_show_1:checked + .mid_desc, #text_show_2:checked + .mid_desc, 
-  #text_show_3:checked + .mid_desc {
+  #participate_button_text_1:checked + .participate_type_description, 
+  #participate_button_text_2:checked + .participate_type_description, 
+  #participate_button_text_3:checked + .participate_type_description {
     display: block;
   }
 
-  #text_show_1, #text_show_2, #text_show_3 {
+  #participate_button_text_1, #participate_button_text_2, #participate_button_text_3 {
     display: none;
   }
 
-  .mid_image {
+  .participate_type_image {
     margin: 40px auto 60px auto;
   }
 }
@@ -240,12 +242,12 @@ h1, h2, h3, a {
     font-size: 24px;
   }
 
-  .mid_text {
+  .participate_type_text {
     width: 70%;
     margin: 10px 0 0 20%;
   }
 
-  .mid_image {
+  .participate_type_image {
     width: 40%;
     height: 50%;
     margin: 10px 10% 30px 40px;
@@ -254,31 +256,31 @@ h1, h2, h3, a {
 }
 
 @media (min-width: 1255px) {
-  .mid_text {
+  .participate_type_text {
     width: 80%;
   }
 
-  .mid_image {
+  .participate_type_image {
     margin-left: 80px;
   }
 }
 
 /*Every section*/
-.section {
+.participate_type {
   text-align: center;
   align-content: center;
 }
 
 /*Media querries for each individual section*/
 @media (max-width: 1000px) {
-  .section {
+  .participate_type {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media (min-width: 1000px) {
-  .section {
+  .participate_type {
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
@@ -308,6 +310,7 @@ h1, h2, h3, a {
     font-size: 20px;
   }
 }
+
 @media (min-width: 1000px) {
   .bottom_title {
     font-size: 24px;
